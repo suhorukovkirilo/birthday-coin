@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="static/style.css">
+        <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    </head>
+    <body>
+        <div class="loader"></div>
+        <header class="hide">
+            <img class="logo" src="static/coin.png">
+            <h1>BirthDay Coin</h1>
+            <img class="avatar" src="static/user.png">
+        </header>
+        <main class="hide">
+            <div class="counter">
+                <div class="hour"></div>
+                <div>:</div>
+                <div class="minute"></div>
+                <div>:</div>
+                <div class="second"></div>
+            </div>
+            <div class="main-pic"></div>
+            <div class="balance" balance="0"></div>
+            <button class="start disabled moveable" disabled>Click to Start</button>
+            <div class="hide shop-items">
+                <h2 class="shop-title">Shop</h2>
+                <div class="shop-counter">
+                    <div class="day"></div>
+                    <div>:</div>
+                    <div class="hour"></div>
+                    <div>:</div>
+                    <div class="minute"></div>
+                    <div>:</div>
+                    <div class="second"></div>
+                </div>
+                <div class="pack">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+                <div class="pack">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+                <div class="pack">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+                <div class="pack">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+                <div class="pack">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+                <h2 class="shop-title">Loot boxes</h2>
+                <h4 class="lootbox-title">LootBox 1</h4>
+                <div class="pack">
+                    <div class="lootbox-item"></div>
+                    <div class="lootbox-item"></div>
+                    <div class="lootbox-item"></div>
+                </div>
+                <div class="pack">
+                    <div class="lootbox-item"></div>
+                    <div class="lootbox-item"></div>
+                    <div class="lootbox-item"></div>
+                </div>
+                <div class="pack">
+                    <div class="lootbox-item"></div>
+                    <div class="lootbox-item"></div>
+                    <div class="lootbox-item"></div>
+                </div>
+                <h4 class="lootbox-title">LootBox 2</h4>
+                <div class="pack">
+                    <div class="lootbox-item"></div>
+                    <div class="lootbox-item"></div>
+                    <div class="lootbox-item"></div>
+                </div>
+                <div class="pack">
+                    <div class="lootbox-item"></div>
+                    <div class="lootbox-item"></div>
+                    <div class="lootbox-item"></div>
+                </div>
+                <div class="pack">
+                    <div class="lootbox-item"></div>
+                    <div class="lootbox-item"></div>
+                    <div class="lootbox-item"></div>
+                </div>
+            </div>
+            <div class="hide item-card">
+                <div class="close"><img class="close-pic" src="static/close.png"></div>
+                <img class="card-main-pic">
+                <h2></h2>
+                <h3></h3>
+                <button class="moveable"></button>
+                <p>*Дані про придбані сертифікати можна знайти на вкладці аккаунт*</p>
+            </div>
+            <div class="hide prequiz">
+                <h2>Починаємо квіз?</h2>
+                <button class="info-redirect moveable">Читати правила</button>
+                <div class="ok-cancel">
+                    <button class="ok-btn moveable">Почати!</button>
+                    <button class="cancel-btn moveable">Назад</button>
+                </div>
+            </div>
+            <div class="hide quiz">
+                <h4>0 / 5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+0 BCoin</h4>
+                <h2>*Запитання*</h2>
+                <div class="answers">
+                    <div class="answer-row">
+                        <button class="answer">*1 Відповідь*</button>
+                        <button class="answer">*2 Відповідь*</button>
+                    </div>
+                    <div class="answer-row">
+                        <button class="answer">*3 Відповідь*</button>
+                        <button class="answer">*4 Відповідь*</button>
+                    </div>
+                </div>
+                <button class="send-btn disabled moveable" disabled>Перевірити</button>
+            </div>
+            <div class="hide after-quiz">
+                <h2>Ви успішно заробили свої BCoin</h2>
+                <h1> +x BCoin </h1>
+                <button>На головну</button>
+            </div>
+            <div class="hide info">
+                <h2>Довідка</h2>
+                <h4>1/21</h4>
+                <div class="card-area">
+                    <div class="card">
+                        <img src="static/wave.png">
+                        <p>Вітаємо вас у додатку BirthDay Coin, де ви зможете отримати подарунки на день народження. Щоб продовжити натисніть 'Далі'</p>
+                    </div>
+                    <div class="card">
+                        <img src="static/coin.png">
+                        <p>BCoin - це 'валюта', яку 7 липня ви зможете перетворити на дійсні сертифікати та інші подарунки</p>
+                    </div>
+                    <div class="card">
+                        <img src="static/wallet.png">
+                        <p>На головній ви можете побачити ваш баланс BCoin та можете заробити їх натиснувши зелену кнопку</p>
+                    </div>
+                    <div class="card">
+                        <img src="static/quiz.png">
+                        <p>Заробляти монетки ви будете за проходження квізів, за допомогою яких ви можете перевірити ваші знання</p>
+                    </div>
+                    <div class="card">
+                        <div style="text-align: center; font-size: 20px;color: #1899d6;">Чого нема в акул?</div>
+                        <div style="width: 35vw; border-radius: 8px; padding: 1.5%; background: white; color: rgb(0, 0, 0); border-radius: 16px; box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1); border: 2px solid rgb(229, 229, 229); font-weight: bold; cursor: pointer; font-size: 12px; font-weight: bold; min-height: 10vh; margin-top: 5%; display: flex; justify-content: center; align-items: center;">Уха</div>
+                        <p>Під час проходження квізу ви будете бачити запитання, варіанти відповідей, кнопку 'Перевірити' та зверху к-ть запитань і зароблених коїнів</p>
+                    </div>
+                    <div class="card">
+                        <div style="text-align: center; font-size: 20px;color: #1899d6;">Чого нема в акул?</div>
+                        <div style="width: 35vw; border-radius: 8px; padding: 1.5%; background-color: #ddf4ff; color: rgb(24, 153, 214); border-radius: 16px; box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1); border: 2px solid #84d8ff; font-weight: bold; cursor: pointer; font-size: 12px; font-weight: bold; min-height: 10vh; margin-top: 5%; display: flex; justify-content: center; align-items: center;">Уха</div>
+                        <p>Після того, як ви натисните на один із варіантів відповідей, то він стане синім і кнопка 'Перевірити' розблокується. Змінити варіант відповідді все ще можливо</p>
+                    </div>
+                    <div class="card">
+                        <div style="width: 35vw; border-radius: 8px; padding: 1.5%; background-color: white; color: #58cc02; border-radius: 16px; box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1); border: 2px solid #58cc02; font-weight: bold; cursor: pointer; font-size: 12px; font-weight: bold; min-height: 10vh; margin-top: 5%; display: flex; justify-content: center; align-items: center;">Кісток</div>
+                        <div style="width: 35vw; border-radius: 8px; padding: 1.5%; background-color: white; color: red; border-radius: 16px; box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1); border: 2px solid red; font-weight: bold; cursor: pointer; font-size: 12px; font-weight: bold; min-height: 10vh; margin-top: 5%; display: flex; justify-content: center; align-items: center;">Зубів</div>
+                        <p>Коли ви перевірити, то побачите правильну відповідь, яка буде зеленим кольором (та якщо ви відповіли невірно, то ваша відповідь буде червоною)</p>
+                    </div>
+                    <div class="card">
+                        <img src="static/quiz.png">
+                        <p>Після цього натискаєте кнопку 'далі' і переходите до наступного запитання і так само відповідаєте на нього. Всього запитань - 5. !Увага! Якщо вийти до закінчення квізу, то результати не збережуться</p>
+                    </div>
+                    <div class="card">
+                        <p style="margin: 5%;">К-ть правильних відповідей за один квіз - x BCoin:</p>
+                        <p style="margin: 1%;">1 - 500 BCoin</p>
+                        <p style="margin: 1%;">2 - 1000 BCoin</p>
+                        <p style="margin: 1%;">3 - 1500 BCoin</p>
+                        <p style="margin: 1%;">4 - 1600 BCoin</p>
+                        <p style="margin: 1%;">5 - 1600 BCoin</p>
+                    </div>
+                    <div class="card">
+                        <div style="display: flex; justify-content: center; gap: 3%; width: 90%; padding: 1%; margin-left: auto; margin-right: auto; margin-top: 3%; font-size: 32px; background-color: #1cb0f6; color: white; border-radius: 1000px; border-bottom: 4px solid #1899d6;">
+                            <div>15</div>
+                            <div>:</div>
+                            <div>35</div>
+                            <div>:</div>
+                            <div>49</div>
+                        </div>
+                        <p>Після проходження квізу ви потрапите знову на головну, де можна побачити таймер відліку до наступної можливості пройти квіз</p>
+                    </div>
+                    <div class="card">
+                        <img src="static/shop.png">
+                        <p>Обміняти BCoin на подарунки можна буде з 07.07.2024 8:00 (Київ) до 10.07.2024 8:00 (Київ). Після цього всі монети згорають. Коштовність кожного товару з'явиться 05.07.2024 8:00 (Київ)</p>
+                    </div>
+                    <div class="card">
+                        <img src="static/pay.png" style="max-height: 20vw;">
+                        <p>Щоб обміняти коїни на подарунки потрібно 1. перейти на сторінку 'shop' 2. натиснути на бажанний товар 3. Підтвердити купівля у новому вікні 4. Перейти до вкладки 'me' та слідкувати за статусами подрунку</p>
+                    </div>
+                    <div class="card">
+                        <img src="static/delivery.png">
+                        <p>
+                            Доставка подарунку займає до 72 годин.
+                            *Кожного подарунку є певна кількість (напркилад, 5 штук), тобто більше неможна отримати*
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="static/no-internet.png">
+                        <p>Організатори не несуть відповідальність через поганий інтернет у користувачів.</p>
+                    </div>
+                    <div class="card">
+                        <img src="static/exit.png" style="max-height: 20vw;">
+                        <p>Перевіряйте чи збереглися всі дані перед тим як вийти. Для цього оновіть сторінку та перевірте, щоб ваш баланс збільшився (після квізу) та щоб картки придбаних товарів з'явилися на вкладці 'me'</p>
+                    </div>
+                    <div class="card">
+                        <img src="static/info.png" style="max-height: 20vw;">
+                        <p>На сторінці 'info' завжди можна передивитися інформацію, яку ви зараз бачите в будь-який момент.</p>
+                    </div>
+                    <div class="card">
+                        <img src="static/save-money.png">
+                        <p>Скільки коштує BCoin? Ціна коїнів буде відома 05.07.2024</p>
+                    </div>
+                    <div class="card">
+                        <img src="static/organization.png">
+                        <p>Передача аккаунту третім особам заборонена. За таке порушення організатори можуть заблокувати ваш аккаунт</p>
+                    </div>
+                    <div class="card">
+                        <img src="static/internet.png">
+                        <p>Використання інтернету для проходження квізів не забороняється</p>
+                    </div>
+                    <div class="card">
+                        <img src="static/debugging.png">
+                        <p>Якщо користувач знайшов баг/помилку в роботі застосунку, то потрібно про це негайно повідомити організаторам. За зловживання помилками/багами можливе блокування аккаунту.</p>
+                    </div>
+                    <div class="card">
+                        <img src="static/start.png" class="start-from-info">
+                        <p>Ну що ж, розпочнемо?</p>
+                    </div>
+                </div>
+                <button class="previous disabled" disabled>Назад</button>
+                <button class="next">Далі</button>
+            </div>
+            <div class="hide account">
+                <div class="main-info">
+                    <img class="account-avatar" src="static/user.png">
+                    <div class="information">
+                        <p class="fullname"></p>
+                        <p class="identifier"></p>
+                        <p class="show-balance"></p>
+                    </div>
+                </div>
+                <h2>Ваші подарунки</h2>
+                <ul style="height: 35vh; overflow-y: scroll;"></ul>
+            </div>
+        </main>
+        <footer class="hide">
+            <button><img src="static/quiz.png">Play</button>
+            <button><img src="static/shop.png">Shop</button>
+            <button><img src="static/info.png">About</button>
+            <button><img src="static/user.png">Me</button>
+        </footer>
+        <script src="static/script.js" defer>
+        </script>
+    </body>
+</html>
