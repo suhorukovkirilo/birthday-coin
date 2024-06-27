@@ -552,6 +552,22 @@ h1 {
     margin-left: 5%;
 }
 
+.account .statistic {
+    display: flex;
+    justify-content: space-around;
+    height: 20vw;
+    padding: 2.5%;
+    margin: 2.5%;
+}
+
+.account .statistic div {
+    height: calc(20vw - 5%);
+    width: calc(20vw - 5%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 footer {
     position: absolute;
     left: 0;
