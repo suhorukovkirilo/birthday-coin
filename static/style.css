@@ -554,7 +554,7 @@ h1 {
 
 .account .statistic {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 20vw;
     padding: 2.5%;
     margin: 2.5%;
@@ -563,9 +563,9 @@ h1 {
 .account .statistic div {
     height: calc(20vw - 5%);
     width: calc(20vw - 5%);
-    display: flex;
-    align-items: center;
     color: #1cb0f6;
+    background-color: rgba(0, 0, 0, 0.06);
+    border: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 footer {
