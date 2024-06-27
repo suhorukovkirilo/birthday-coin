@@ -564,8 +564,8 @@ h1 {
     height: calc(20vw - 5%);
     width: calc(20vw - 5%);
     color: #1cb0f6;
-    background-color: rgba(0, 0, 0, 0.06);
-    border: 2px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(0, 0, 0, 0.4);
 }
 
 footer {
