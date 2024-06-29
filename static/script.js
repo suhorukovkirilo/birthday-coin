@@ -34,6 +34,10 @@ fetch("https://liriker.pythonanywhere.com/api/" + login + "/" + password + "/pro
         img.style.borderRadius = '16px';
         shopItems[i].appendChild(img);
 
+        if (products.main[i].img == "static/MOBILE.png") {
+            img.style.maxHeight = '20vw';
+        };
+
         var name = document.createElement('p');
         name.innerHTML = products.main[i].name;
         name.style.display = 'block';
