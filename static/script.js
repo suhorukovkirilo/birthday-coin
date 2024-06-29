@@ -36,7 +36,7 @@ fetch("https://liriker.pythonanywhere.com/api/" + login + "/" + password + "/pro
 
         if (products.main[i].img == "static/MOBILE.png") {
             img.style.maxHeight = '15vw';
-            img.style.marginTop = '5vw';
+            img.style.marginTop = '5%';
         };
 
         var name = document.createElement('p');
