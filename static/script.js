@@ -383,8 +383,7 @@ function PreviousInfoCard() {
 }
 
 function OpenCard() {
-    console.log(july5th.day + july5th.hour + july5th.minute + july5th.second);
-    if (july5th.day + july5th.hour + july5th.minute + july5th.second === 0) {
+    if (july5th.day + july5th.hour + july5th.minute + july5th.second < 0) {
         var card = document.querySelectorAll(".shop-items .item")[this.getAttribute('data-number')];
 
         var itemCard = document.querySelector('.item-card');
