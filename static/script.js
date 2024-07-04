@@ -395,7 +395,7 @@ function OpenCard() {
                 itemCard.querySelector('h3').innerHTML = product.cost.toString() + ' BCoin';
             };
         };
-        if (parseInt(card.querySelector('div').innerHTML.split("/")[0]) !== 0 && july7th.day + july7th.hour + july7th.minute + july7th.second === 0) {
+        if (parseInt(card.querySelector('div').innerHTML.split("/")[0]) !== 0 && july7th.day + july7th.hour + july7th.minute + july7th.second < 0) {
             itemCard.querySelector('button').innerHTML = 'отримати';
             itemCard.querySelector('button').classList.add('moveable');
             itemCard.querySelector("button").addEventListener('click', function() {
