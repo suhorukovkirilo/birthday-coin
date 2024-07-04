@@ -382,9 +382,9 @@ function PreviousInfoCard() {
     };
 }
 
-function OpenCard() {
+function OpenCard(event) {
     if (july5th.day + july5th.hour + july5th.minute + july5th.second < 0) {
-        var card = document.querySelectorAll(".shop-items .item")[this.getAttribute('data-number')];
+        var card = document.querySelectorAll(".shop-items .item")[event.target.getAttribute('data-number')];
 
         var itemCard = document.querySelector('.item-card');
         itemCard.classList.remove('hide');
