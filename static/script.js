@@ -56,7 +56,7 @@ fetch("https://liriker.pythonanywhere.com/api/" + login + "/" + password + "/pro
 
         shopItems[i].setAttribute('data-number', i);
 
-        shopItems[i].addEventListener('click', function() {console.log('clicked');  OpenCard()});
+        shopItems[i].addEventListener('click', OpenCard);
         i += 1;
     };
 
