@@ -17,7 +17,7 @@ var july5th = {};
 var july7th = {};
 
 
-fetch("https://127.0.0.1:5000/api/" + login + "/" + password + "/products", {"method": "GET"})
+fetch("https://liriker.pythonanywhere.com/api/" + login + "/" + password + "/products", {"method": "GET"})
 .then(response => response.json())
 .then(data => {
     products = data.products;
@@ -100,7 +100,7 @@ fetch("https://127.0.0.1:5000/api/" + login + "/" + password + "/products", {"me
     }
 })
 
-fetch("https://127.0.0.1:5000/api/" + login + "/" + password + "/info", {"method": "GET"})
+fetch("https://liriker.pythonanywhere.com/api/" + login + "/" + password + "/info", {"method": "GET"})
 .then(response => response.json())
 .then(data => {
     document.querySelector(".balance").setAttribute('balance', data.balance)
@@ -246,7 +246,7 @@ function Quiz() {
         el.classList.remove("correct");
         el.classList.remove("incorrect");
     };
-    fetch("https://127.0.0.1:5000/api/" + login + "/" + password + "/is-ready", {"method": "GET"})
+    fetch("https://liriker.pythonanywhere.com/api/" + login + "/" + password + "/is-ready", {"method": "GET"})
     .then(response => response.json())
     .then(data => {
         if (data["is-ready"]) {
@@ -258,7 +258,7 @@ function Quiz() {
                 el.classList.remove("hide")
             };
 
-            fetch("https://127.0.0.1:5000/api/" + login + "/" + password + "/random")
+            fetch("https://liriker.pythonanywhere.com/api/" + login + "/" + password + "/random")
             .then(response => response.json())
             .then(data => {
                 globalQuestion = data.random;
@@ -333,7 +333,7 @@ function afterQuiz() {
 
     document.querySelector(".after-quiz h1").innerHTML = document.querySelector(".after-quiz h1").innerHTML
     .replace("x", document.querySelector(".quiz h4").innerHTML.replace("5 / 5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+", "").replace(" BCoin", ""))
-    fetch("https://127.0.0.1:5000/api/" + login + "/" + password + "/reset+" + correctAnswered.toString(), {"method": "POST"});
+    fetch("https://liriker.pythonanywhere.com/api/" + login + "/" + password + "/reset+" + correctAnswered.toString(), {"method": "POST"});
 };
 
 function GenerateSnowflake() {
@@ -432,7 +432,7 @@ function OpenCard() {
             itemCard.querySelector('button').innerHTML = 'отримати';
             itemCard.querySelector('button').classList.add('moveable');
             itemCard.querySelector("button").addEventListener('click', function() {
-                fetch("https://127.0.0.1:5000/api/" + login + "/" + password + "/buy+" + card.querySelector('p').innerHTML, {"method": "POST"})
+                fetch("https://liriker.pythonanywhere.com/api/" + login + "/" + password + "/buy+" + card.querySelector('p').innerHTML, {"method": "POST"})
                 .then(response => response.json())
                 .then(data => {
                     if (data.buy === "ok") {
@@ -477,7 +477,7 @@ function OpenMain() {
 };
 
 function RollDice(i) {
-    fetch("https://127.0.0.1:5000/api/" + login + "/" + password + "/roll+" + i, {"method": "POST"})
+    fetch("https://liriker.pythonanywhere.com/api/" + login + "/" + password + "/roll+" + i, {"method": "POST"})
     .then(response => response.json())
     .then(data => {
         console.log(data);
