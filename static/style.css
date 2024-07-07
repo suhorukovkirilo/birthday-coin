@@ -184,6 +184,22 @@ h1 {
     cursor: pointer;
 }
 
+.shop-items .role-btn {
+    width: 60%;
+    padding: 2% 0;
+    background-color: #58cc02;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    border-bottom: 4px solid #58a700;
+    font-size: 24px;
+    margin-left: 7%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .item-card {
     position: absolute;
     background-color: whitesmoke;
