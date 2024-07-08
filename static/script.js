@@ -505,7 +505,6 @@ SetAvatarUrl(token, id);
 
 document.querySelector("footer button").addEventListener('click', OpenMain);
 document.querySelectorAll("footer button")[1].addEventListener('click', OpenShop);
-document.querySelector(".start").addEventListener('click', PreQuiz);
 document.querySelector(".prequiz .cancel-btn").addEventListener('click', OpenMain);
 document.querySelector(".prequiz .ok-btn").addEventListener('click', Quiz);
 document.querySelector(".after-quiz button").addEventListener('click', function() {location.reload();});
